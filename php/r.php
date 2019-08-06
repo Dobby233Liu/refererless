@@ -1,1 +1,1 @@
-<?php header("Location:".$_POST['u']||$_GET['u']);
+<?php header("Location:".(!isset($_GET['u'])?$_POST['u']:$_GET['u']));
